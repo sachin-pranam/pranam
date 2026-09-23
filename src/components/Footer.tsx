@@ -120,6 +120,24 @@ export function Footer() {
           <p className="ftr-copyright">
             © {company.founded} – {new Date().getFullYear()} {company.legalName}. All rights reserved.
           </p>
+          <div className="ftr-visitor-counter">
+            <div id="sfc8xs8b9ms6bqledxqsma1cb2y7g4bksn6"></div>
+            <script
+              type="text/javascript"
+              src="https://counter11.optistats.ovh/private/counter.js?c=8xs8b9ms6bqledxqsma1cb2y7g4bksn6&down=async"
+              async
+            ></script>
+            <noscript>
+              <a href="https://www.freecounterstat.com" title="page counter">
+                <img
+                  src="https://counter11.optistats.ovh/private/freecounterstat.php?c=8xs8b9ms6bqledxqsma1cb2y7g4bksn6"
+                  border="0"
+                  title="page counter"
+                  alt="page counter"
+                />
+              </a>
+            </noscript>
+          </div>
           <p className="ftr-credit">
             by Pranam Software
           </p>

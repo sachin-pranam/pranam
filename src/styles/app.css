@@ -1373,6 +1373,8 @@ section{padding-block:84px}
 
 .ftr-bottom-section{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1)}
 .ftr-copyright{color:#9FADC7;font-size:13px;margin:0}
+.ftr-visitor-counter{display:flex;align-items:center;justify-content:center}
+.ftr-visitor-counter img{max-height:40px;opacity:0.8}
 .ftr-credit{color:#9FADC7;font-size:13px;margin:0}
 
 /* Responsive Footer */
