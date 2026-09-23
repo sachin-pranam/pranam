@@ -1,10 +1,24 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 import { company as defaultCompany, mapCompanyRow, nav } from '~/data/site'
 import { useLiveSingleton } from '~/lib/content'
 import { Facebook, Instagram, LinkedIn, Mail, Phone, Pin, YouTube, WhatsApp } from './Icons'
 
 export function Footer() {
   const company = useLiveSingleton('company_info', defaultCompany, mapCompanyRow)
+  
+  // Load visitor counter script
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.type = 'text/javascript'
+    script.src = 'https://counter11.optistats.ovh/private/counter.js?c=8xs8b9ms6bqledxqsma1cb2y7g4bksn6&down=async'
+    script.async = true
+    document.body.appendChild(script)
+    
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
   
   const quickLinks = [
     { to: '/', label: 'Home' },
@@ -122,21 +136,6 @@ export function Footer() {
           </p>
           <div className="ftr-visitor-counter">
             <div id="sfc8xs8b9ms6bqledxqsma1cb2y7g4bksn6"></div>
-            <script
-              type="text/javascript"
-              src="https://counter11.optistats.ovh/private/counter.js?c=8xs8b9ms6bqledxqsma1cb2y7g4bksn6&down=async"
-              async
-            ></script>
-            <noscript>
-              <a href="https://www.freecounterstat.com" title="page counter">
-                <img
-                  src="https://counter11.optistats.ovh/private/freecounterstat.php?c=8xs8b9ms6bqledxqsma1cb2y7g4bksn6"
-                  border="0"
-                  title="page counter"
-                  alt="page counter"
-                />
-              </a>
-            </noscript>
           </div>
           <p className="ftr-credit">
             by Pranam Software
