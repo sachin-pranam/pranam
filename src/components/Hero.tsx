@@ -35,21 +35,6 @@ export function Hero() {
 
   return (
     <section className="hero2">
-      <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true">
-        <defs>
-          <filter id="heroSoftEdge" x="-30%" y="-30%" width="160%" height="160%">
-            <feGaussianBlur stdDeviation="0.012" />
-          </filter>
-          <mask id="heroZigzagMask" maskContentUnits="objectBoundingBox">
-            <polygon
-              points="0.40,0 1,0 1,1 0.04,1 0.24,0.54"
-              fill="#fff"
-              filter="url(#heroSoftEdge)"
-            />
-          </mask>
-        </defs>
-      </svg>
-
       <div className="hero2-photo">
         <div className="hero2-img">
           <img 

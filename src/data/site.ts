@@ -328,6 +328,13 @@ export const team: Member[] = [
     img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx1QqndiFeqEhSYumldpnPhKLULEFXGCZOhUvlzUx4ymrc5C_UBhmE4WdtJIRS2sZjDWEKTmRkVIiita9wtxoDUJ-ORC5h3l_NwR3HZYvCXyzTP2pT4to-7zi_FXjBQvjSIjtQb9G2J0TQXTn3T3coJpeaBEZZJNiJTKzunUyyZdJn7iuwp9LaE4sycQ/s1600/IMG-20260105-WA0006gdhdhdd-removebg-preview.png',
   },
   {
+    name: 'Anusha Ghimire',
+    ini: 'AG',
+    role: 'chief communication manager',
+    skills: 'Communication Strategy | Public Relations | Team Leadership',
+    img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSeHh5fmab11ZmR640sfteWuVhbKk4hCwR6zuQQD4AF2VPfMl8m6PBq5mkKrMLYch7MY2uhkddD_N09Hq87jq8qy-6EGbqbOLUv5aKf4bPQySpYYHyJN4kCSgp2b4QdI3EWNu49Znd-hiewA9V9G6rxDtN3_AsayLVNu3oTDixl_aPVIRVOfKXHe_uO00/s600/anusha.jpeg',
+  },
+  {
     name: 'Arbindra Kharel',
     ini: 'AK',
     role: 'content generation',
