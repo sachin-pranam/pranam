@@ -1,24 +1,10 @@
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
 import { company as defaultCompany, mapCompanyRow, nav } from '~/data/site'
 import { useLiveSingleton } from '~/lib/content'
 import { Facebook, Instagram, LinkedIn, Mail, Phone, Pin, YouTube, WhatsApp } from './Icons'
 
 export function Footer() {
   const company = useLiveSingleton('company_info', defaultCompany, mapCompanyRow)
-  
-  // Load visitor counter script
-  useEffect(() => {
-    const script = document.createElement('script')
-    script.type = 'text/javascript'
-    script.src = 'https://counter11.optistats.ovh/private/counter.js?c=8xs8b9ms6bqledxqsma1cb2y7g4bksn6&down=async'
-    script.async = true
-    document.body.appendChild(script)
-    
-    return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
   
   const quickLinks = [
     { to: '/', label: 'Home' },
