@@ -37,8 +37,7 @@ export function Preloader() {
   return (
     <div className={`preloader${hidden ? ' preloader-hidden' : ''}`} aria-hidden={hidden}>
       <div className="preloader-inner">
-        <div className="preloader-ring" />
-        <img src="/logo.png" alt="" className="preloader-logo" />
+        <div className="preloader-text">Pranam Software</div>
       </div>
       <div className="preloader-bar">
         <span />
